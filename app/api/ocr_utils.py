@@ -5,7 +5,6 @@ from PIL import Image, ImageOps, ImageFilter
 import cv2
 import numpy as np
 from app.core.settings import TESSERACT_EXE
-from ArabicOcr import arabicocr
 import os
 from pathlib import Path
 

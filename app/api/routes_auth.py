@@ -81,6 +81,7 @@ async def signup_submit(
                 status_code=400,
             )
 
+        # sanitize filename and always write to our controlled directory
         temp_path = IMAGES_DIR / f"temp_{uuid.uuid4().hex}.jpg"
         temp_path.write_bytes(await id_image.read())
 
@@ -97,7 +98,8 @@ async def signup_submit(
 
     # Save step
     temp_image_name = request.query_params.get("tmp")
-    temp_path = IMAGES_DIR / temp_image_name if temp_image_name else None
+    # prevent path traversal by resolving only against IMAGES_DIR and using name
+    temp_path = IMAGES_DIR / Path(temp_image_name).name if temp_image_name else None
 
     if temp_path and temp_path.exists():
         final_path = IMAGES_DIR / f"{uuid.uuid4().hex}.jpg"
