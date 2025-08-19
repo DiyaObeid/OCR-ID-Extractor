@@ -15,3 +15,7 @@ IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 # matching thresholds
 MIN_MATCH_COUNT = 15
 GOOD_MATCH_RATIO = 0.75
+
+# uploads
+MAX_UPLOAD_BYTES = int(os.environ.get("MAX_UPLOAD_BYTES", str(10 * 1024 * 1024)))
+ALLOWED_IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
