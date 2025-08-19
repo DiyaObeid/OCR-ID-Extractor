@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ID OCR Auth</title>
+  <link rel="stylesheet" href="/static/css/styles.css"/>
+</head>
+<body>
+  <header class="nav">
+    <a href="/login">Login</a>
+    <a href="/signup">Signup</a>
+  </header>
+
+  <main class="container">
+    {% if error %}
+      <div class="alert error">{{ error }}</div>
+    {% endif %}
+    {% if success %}
+      <div class="alert success">{{ success }}</div>
+    {% endif %}
+    {% block content %}{% endblock %}
+  </main>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

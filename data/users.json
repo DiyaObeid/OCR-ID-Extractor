@@ -1,0 +1,70 @@
+[
+  {
+    "id": "982cd70b2ec84ab3b8f34dfbad843bed",
+    "image_path": "D:\\Projects\\OCRtask\\data\\images\\996ce7eeaada42d7ab321cfb4bde4b28.jpg",
+    "full_name": "DIVA! TAYSEER QHAMIMADOBEID",
+    "mother_name": "AYAT",
+    "dob": "18/7/2003",
+    "birth_place": "ZARQA",
+    "address": "",
+    "created_at": "2025-08-18T16:52:00.435928Z"
+  },
+  {
+    "id": "fc01e96cb03b429f82597688200402c1",
+    "image_path": "D:\\Projects\\OCRtask\\data\\images\\d903517f179741c1ad256e169dc198a2.jpg",
+    "full_name": "DIVA! TAYSEER MOHAMMAD",
+    "mother_name": "AYAT",
+    "dob": "18/7/2003",
+    "birth_place": "ZARQA",
+    "address": "",
+    "created_at": "2025-08-18T16:59:13.292182Z"
+  },
+  {
+    "id": "14635ad8a78845a886b13092258c86a0",
+    "image_path": "D:\\Projects\\OCRtask\\data\\images\\0916a3447f704fbdb942ce3ad041a3e8.jpg",
+    "full_name": "DIVA! TAYSEER QHAMIMADOBEID",
+    "mother_name": "AYAT",
+    "dob": "18/7/2003",
+    "birth_place": "ZARQA",
+    "created_at": "2025-08-18T17:07:59.101690Z"
+  },
+  {
+    "id": "f151d3fb8e924b2b8dec59028305a174",
+    "image_path": "D:\\Projects\\OCRtask\\data\\images\\3f7e6360c0f94ffea764966d29f4b9cf.jpg",
+    "full_name": "DIVA! TAYSEER QHAMIMADOBEID",
+    "mother_name": "AYAT",
+    "dob": "18/7/2003",
+    "birth_place": "ZARQA",
+    "created_at": "2025-08-18T17:38:49.496148Z"
+  },
+  {
+    "id": "98e050fc66e442429ccd88051dd88951",
+    "image_path": "D:\\Projects\\OCRtask\\data\\images\\b08c97ae60414cda95ae90397c19a824.jpg",
+    "full_name": "DIVA! TAYSEER QHAMIMADOBEID",
+    "mother_name": "AYAT",
+    "dob": "18/7/2003",
+    "birth_place": "ZARQA",
+    "full_name_ar": "",
+    "full_name_en": "DIVA! TAYSEER QHAMIMADOBEID",
+    "mother_name_ar": "",
+    "mother_name_en": "",
+    "dob_ar": "",
+    "dob_en": "",
+    "birth_place_ar": "",
+    "birth_place_en": "",
+    "created_at": "2025-08-18T17:50:32.344888Z"
+  },
+  {
+    "id": "0c0534bba1b24d14b34dbdda753e51ec",
+    "image_path": "D:\\Projects\\OCRtask\\data\\images\\8d79657884004f60a842eb419e86840b.jpg",
+    "full_name_ar": "تجربه",
+    "full_name_en": "test",
+    "mother_name_ar": "تجربه",
+    "mother_name_en": "test",
+    "dob_ar": "تجربه",
+    "dob_en": "test",
+    "birth_place_ar": "تجربه",
+    "birth_place_en": "test",
+    "created_at": "2025-08-18T18:23:11.272324Z"
+  }
+]

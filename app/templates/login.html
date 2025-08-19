@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Login with ID Image</h1>
+
+<form action="/login" method="post" enctype="multipart/form-data" class="card">
+  <label>Upload ID Image (JPG/PNG)</label>
+  <input type="file" name="id_image" accept="image/*" required />
+  <button type="submit">Login</button>
+</form>
+
+{% if user_fields %}
+<div class="card">
+  <h3>Extracted Data (OCR)</h3>
+  <ul>
+    <li><strong>Full Name:</strong> {{ user_fields.full_name }}</li>
+    <li><strong>Mother’s Name:</strong> {{ user_fields.mother_name }}</li>
+    <li><strong>Date of Birth:</strong> {{ user_fields.dob }}</li>
+    <li><strong>Place of Birth:</strong> {{ user_fields.birth_place }}</li>
+
+  </ul>
+</div>
+{% endif %}
+
+{% if user_record %}
+<div class="card">
+  <h3>Matched User Record (Stored)</h3>
+  <pre>{{ user_record | tojson(indent=2) }}</pre>
+</div>
+{% endif %}
+{% endblock %}

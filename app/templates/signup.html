@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Signup with ID Image</h1>
+
+{% if stage == "confirm" %}
+  <form action="/signup?tmp={{ temp_image }}" method="post" class="card">
+    <h3>Confirm OCR (Arabic / English)</h3>
+    <div class="grid">
+      <label>Full Name (Arabic)
+        <input name="full_name_ar" value="{{ fields.full_name_ar }}"/>
+      </label>
+      <label>Full Name (English)
+        <input name="full_name_en" value="{{ fields.full_name_en }}"/>
+      </label>
+
+      <label>Mother’s Name (Arabic)
+        <input name="mother_name_ar" value="{{ fields.mother_name_ar }}"/>
+      </label>
+      <label>Mother’s Name (English)
+        <input name="mother_name_en" value="{{ fields.mother_name_en }}"/>
+      </label>
+
+      <label>Date of Birth (Arabic)
+        <input name="dob_ar" value="{{ fields.dob_ar }}"/>
+      </label>
+      <label>Date of Birth (English)
+        <input name="dob_en" value="{{ fields.dob_en }}"/>
+      </label>
+
+      <label>Place of Birth (Arabic)
+        <input name="birth_place_ar" value="{{ fields.birth_place_ar }}"/>
+      </label>
+      <label>Place of Birth (English)
+        <input name="birth_place_en" value="{{ fields.birth_place_en }}"/>
+      </label>
+    </div>
+
+    <input type="hidden" name="confirm" value="yes"/>
+    <button type="submit">Save</button>
+  </form>
+{% else %}
+  <form action="/signup" method="post" enctype="multipart/form-data" class="card">
+    <label>Upload ID Image (JPG/PNG)</label>
+    <input type="file" name="id_image" accept="image/*" required />
+    <button type="submit">Extract & Confirm</button>
+  </form>
+{% endif %}
+
+
+{% if saved %}
+<div class="card">
+  <h3>Saved Record</h3>
+  <pre>{{ saved | tojson(indent=2) }}</pre>
+</div>
+{% endif %}
+
+{% if users %}
+<div class="card">
+  <h3>All Users</h3>
+  <pre>{{ users | tojson(indent=2) }}</pre>
+</div>
+{% endif %}
+{% endblock %}
